@@ -69,3 +69,30 @@ MindPulse AI is an edge-focused, privacy-first mental health screening and journ
    * **Dashboard & Studio:** Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser.
    * **Interactive REST Docs:** Navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) to inspect and test API routes.'
 
+## 📂 Repository Structure
+
+```text
+MindPulse_AI/
+├── 📁 backend/                      # FastAPI Backend Service
+│   ├── 📁 app/
+│   │   ├── 📁 api/                  # API endpoints and route handlers
+│   │   ├── 📁 core/                 # Configs, security, and environment settings
+│   │   ├── 📁 models/               # ML model loaders and inference pipelines
+│   │   └── 📁 services/             # Psycholinguistic and biomarker extractors
+│   ├── main.py                      # Application entry point & CORS configuration
+│   └── requirements.txt             # Python dependencies (FastAPI, Torch, Scikit-Learn)
+│
+├── 📁 frontend/                     # React + Vite Frontend UI
+│   ├── 📁 public/                   # Static assets, icons, and favicon
+│   ├── 📁 src/
+│   │   ├── 📁 components/           # UI components (Charts, Gauge, Forms)
+│   │   ├── 📁 pages/                # App views (Journal, Telemetry, Screener, Grounding)
+│   │   ├── 📁 styles/               # Global CSS & Tailwind configurations
+│   │   ├── App.jsx                  # Main routing & state layout
+│   │   └── main.jsx                 # React DOM mount point
+│   ├── index.html                   # HTML template entry
+│   ├── package.json                 # Node.js dependencies & build scripts
+│   └── vite.config.js               # Vite bundler & dev server config
+│
+├── .gitignore                       # Rules excluding venv/, node_modules/, and cache
+└── README.md                        # Project documentation and architecture guide
