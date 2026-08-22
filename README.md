@@ -135,3 +135,18 @@ MindPulse_AI/
                        ┌─────────────────────────┐
                        │ Frontend Interactive UI │
                        └─────────────────────────┘
+
+                       ## 🚀 Future Roadmap & Scope
+
+### 1. Multi-Modal Biomarker Integration
+* **Voice & Acoustic Telemetry**: Extend sentiment analysis to speech audio streams, tracking vocal pitch, micro-pauses, and acoustic prosody during journal recordings.
+* **Wearable Health Sync**: Integrate Apple HealthKit, Google Health Connect, and Fitbit APIs to correlate heart rate variability (HRV), sleep architecture, and electrodermal activity with subjective mood logs.
+
+### 2. Enhanced Privacy & On-Device Processing
+* **Local WebLLM & WASM Execution**: Transition inference pipelines to browser-side WebAssembly (WASM) and local WebLLM models, ensuring 100% zero-server data processing for ultimate user privacy.
+* **Differential Privacy Frameworks**: Implement mathematical differential privacy to allow aggregated, anonymous clinical research analytics without compromising individual user identity.
+
+### 3. Enterprise & Clinical Workflow Expansion
+* **EHR/EMR Standards Support**: Incorporate FHIR (Fast Healthcare Interoperability Resources) and HL7 standards for direct integration into clinical Electronic Health Record systems.
+* **Clinician Triage Dashboard**: Build a dedicated portal for mental health professionals to monitor real-time longitudinal client telemetry, safety flags, and exported psychometric reports.
+* **Localized Multilingual Support**: Expand language coverage across regional dialects and multilingual sentiment tokenizers to support global, non-English psycholinguistic screening.
