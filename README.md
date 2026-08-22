@@ -96,3 +96,42 @@ MindPulse_AI/
 │
 ├── .gitignore                       # Rules excluding venv/, node_modules/, and cache
 └── README.md                        # Project documentation and architecture guide
+
+## 🔄 Application Architecture & Data Flow
+
+```text
+[ User Input / Client Interface ]
+               │
+               ▼
+   ┌───────────────────────┐
+   │ React / Vite Frontend │
+   └───────────┬───────────┘
+               │
+               │ (REST API / Axios Requests)
+               ▼
+   ┌───────────────────────┐
+   │  FastAPI Backend API  │
+   └───────────┬───────────┘
+               │
+      ┌────────┴────────────────────────┬────────────────────────┐
+      ▼                                 ▼                        ▼
+┌───────────┐                     ┌───────────┐            ┌───────────┐
+│ Safety    │                     │ Clinical  │            │ Affective │
+│ Matrix    │                     │ Screener  │            │ Telemetry │
+└─────┬─────┘                     └─────┬─────┘            └─────┬─────┘
+      │                                 │                        │
+      ▼                                 ▼                        ▼
+ (High-Recall                      (PHQ-9 / GAD-7           (Longitudinal
+  Crisis Flag)                     Stratification)           Trend Analysis)
+      │                                 │                        │
+      └─────────────────────────────────┴────────────────────────┘
+                                       │
+                                       ▼
+                       ┌─────────────────────────┐
+                       │ Structured JSON Response│
+                       └───────────┬─────────────┘
+                                   │
+                                   ▼
+                       ┌─────────────────────────┐
+                       │ Frontend Interactive UI │
+                       └─────────────────────────┘
