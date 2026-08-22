@@ -136,6 +136,6 @@ MindPulse_AI/
                        │ Frontend Interactive UI │
                        └─────────────────────────┘
 
-
+## **FUTURE SCOPE**
 
 
