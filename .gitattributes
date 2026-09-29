@@ -1,0 +1,11 @@
+# Explicitly assign language definitions to file extensions
+*.py linguist-language=Python
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+
+# Instruct GitHub to ignore any vendor dependencies from language calculations
+**/node_modules/* linguist-vendored
